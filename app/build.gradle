@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.sunnyweather"
-        minSdkVersion 16
+        minSdkVersion 18
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -21,6 +21,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    kotlinOptions{
+        jvmTarget = "1.8"
     }
 }
 
